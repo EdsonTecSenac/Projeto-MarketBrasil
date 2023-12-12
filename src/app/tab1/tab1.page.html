@@ -1,34 +1,26 @@
 <ion-content>
-  <!-- Botão e Badge de Likes -->
-  <ion-fab vertical="top" horizontal="end">
-    <ion-fab-button (click)="addlikes()">
-      <ion-icon name="thumbs-up-sharp"></ion-icon>
-    </ion-fab-button>
-    <ion-badge color="danger">{{likes}}</ion-badge>
-  </ion-fab>
-
   <!-- Grid para Layout -->
   <ion-grid>
     <!-- Imagem do Logo -->
     <ion-row>
       <ion-col id="fotoPerfilCol">
-        <img src="assets/cinelli-store-logo.png" alt="Cinelli Store Logo" class="logo-image">
+        <img src="assets/logomarket.png" alt="MarketBrasil" class="logo-image">
       </ion-col>
     </ion-row>
 
     <!-- Título da Página -->
-    <ion-row>
-      <ion-col id="nome">Vestuário e Calçados</ion-col>
-    </ion-row>
+    
+      <ion-col id="nome">"MarketBrasil: Produtos e promoções imperdíveis."</ion-col>
+    
   </ion-grid>
 
  <!-- Galeria de Fotos -->
  <div class="photo-gallery" #photoGallery>
   <!-- Seta para Esquerda -->
   <ion-icon name="chevron-back-circle" class="gallery-arrow left-arrow" (click)="previousImage()"></ion-icon>
-  <img src="assets/loja masculina.png" alt="Imagem da Nossa loja" #galleryImage>
-  <img src="assets/roupas masculinas.png" alt="Algum de nossos produtos" #galleryImage>
-  <img src="assets/escolha de produtos.png" alt="Um cliente escolhendo produtos" #galleryImage>
+  <img src="assets/container1.png" alt="promocoes" #galleryImage>
+  <img src="assets/vagas.png" alt="vagas" #galleryImage>
+  <img src="assets/ofertashoje.png" alt="ofertas" #galleryImage>
   <!-- Seta para Direita -->
   <ion-icon name="chevron-forward-circle" class="gallery-arrow right-arrow" (click)="nextImage()"></ion-icon>
 </div>
@@ -41,7 +33,8 @@
 
 <!-- Descrição da Loja -->
   <div class="store-description">
-    <h2>Sobre a Cinelli Store:</h2>
-    <p>A Cinelli Store oferece uma ampla gama de roupas e calçados masculinos. Visite-nos para descobrir as últimas tendências!</p>
+    <h2>Sobre o Market Brasil</h2>
+    <p>Descubra uma variedade de produtos de qualidade e economia que transformam suas compras em experiências 
+      ainda mais especiais. Seja bem-vindo à excelência em economia e conveniência."</p>
   </div>
 </ion-content>
