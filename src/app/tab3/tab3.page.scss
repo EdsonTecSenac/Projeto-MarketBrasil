@@ -1,6 +1,25 @@
 /* Adicione isso ao seu arquivo de estilo (por exemplo, styles.scss) */
+ion-content {
+  --ion-background-color: black;
+  color: white; /* Defina a cor do texto para branco ou outra cor visível no fundo preto */
+}
+
+ion-card {
+  background-color: white;
+  color: black; /* Defina a cor do texto para preto ou outra cor visível no fundo branco */
+}
+
+.title1 {
+ 
+  color: rgb(255, 255, 255); 
+}
+
+
 .custom-header {
     margin-top: 25px; /* Ajuste a margem conforme necessário */
   }
+
+
+
   
   
