@@ -1,4 +1,6 @@
+// Importe o Router do módulo '@angular/router'
 import { Component, QueryList, ViewChildren, AfterViewInit, ElementRef } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-tab1',
@@ -10,7 +12,8 @@ export class Tab1Page implements AfterViewInit {
   currentImageIndex: number = 0;
   likes: number = 0;
 
-  constructor() {}
+  // Injete o Router no construtor
+  constructor(private router: Router) {}
 
   ngAfterViewInit() {
     // Inicializar a exibição da primeira imagem após a view ser inicializada.
@@ -47,7 +50,12 @@ export class Tab1Page implements AfterViewInit {
   }
 
   // Incrementar o contador de curtidas
-  addlikes() {
+  addLikes() {
     this.likes++;
+  }
+
+  // Navegar para outra página quando clicar na imagem com o índice 2
+  navigateToTab2() {
+    this.router.navigate(['/tabs/tab2']);
   }
 }

@@ -16,7 +16,7 @@
     transform: translateY(-50%);
     font-size: 30px;
     /* Ajuste o tamanho conforme necessário */
-    color: #837163;
+    color: #ffffff;
     /* Cor das setas */
     cursor: pointer;
 }
@@ -65,7 +65,7 @@
     }
 
     .active {
-        background-color: #837163;
+        background-color: #ffffff;
         /* Cor para indicar a imagem atual */
     }
 }
@@ -101,7 +101,7 @@
     /* Tamanho da fonte maior para o título da seção */
     margin-bottom: 12px;
     /* Espaço extra abaixo do título */
-    color: #837163;
+    color: rgb(0, 0, 0);
     /* Cor do título para se destacar do texto */
     font-weight: bold;
     /* Mantém o peso da fonte para título */
@@ -110,9 +110,8 @@
 
 #nome {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #837163;
-    /* ou qualquer outra cor que você esteja usando */
-    color: #000000;
+
+    color: #ffffff;
     /* Cor do texto */
     font-size: 16px;
     /* Tamanho da fonte */
